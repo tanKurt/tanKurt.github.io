@@ -1,0 +1,169 @@
+body {
+  background-image: url("images/background.jpg");
+  background-size: 100%;
+  background-position: relative;
+  color: white;
+  font-family: "Arial", sans-serif;
+  background-repeat: r;
+}
+
+/* Title Section */
+.title-container {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  text-align: left;
+  z-index: 10;
+}
+
+.title-banner {
+  display: inline-block;
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-main {
+  font-size: 3rem;
+  font-family: "Pacifico", cursive;
+  color: #7ec8e3;
+  text-shadow: 3px 3px 5px black;
+  margin-top: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+/* Restaurant Grid */
+.restaurant-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/* Restaurant Cards */
+.restaurant-card {
+  width: 300px;
+  height: 900px;
+  background-color: rgb(200, 155, 155);
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0 15px;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.card-header {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.more-btn {
+  display: block;
+  margin: 10px auto;
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  text-decoration: underline;
+}
+
+/* Restaurant Detail View */
+.restaurant-detail {
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Tabs */
+.tab-container {
+  margin-top: 15px;
+}
+
+.tab-btn {
+  background-color: yellow;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.tab-btn.active {
+  background-color: gold;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 15px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Move Main Menu Button to Top-Right */
+.main-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main-menu-btn:hover {
+  background-color: gold;
+}
+
+.detail-img {
+  width: 300px; /* Set a specific width */
+  height: 200px; /* Set a specific height */
+  object-fit: cover; /* Maintains aspect ratio while covering the area */
+  display: block; /* Ensures proper spacing */
+  margin: 0 auto; /* Centers the image */
+}
